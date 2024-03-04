@@ -3,8 +3,9 @@ import fetchWeather from "./api/fetchWeather";
 import "./App.css";
 
 function App() {
-  //create state variable
+  //create state variables
   const [query, setQuery] = useState("");
+  const [weather, setWeather] = useState({});
 
   //create function
   const search = async (e) => {
@@ -14,6 +15,11 @@ function App() {
 
       //test if data is returned after API call
       console.log(data);
+
+      //use setWeather
+      setWeather(data);
+      //clear query
+      setQuery("");
     }
   };
 
