@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# checkWeather App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of contents
 
-## Available Scripts
+- [Introduction](#introduction)
+- [Screenshots to represent the project](#screenshots-to-represent-the-project)
+- [Tasks in the project](#tasks-in-the-project)
+- [Link to the App](#link-to-the-app)
+- [Install the PWA](#install-the-pwa)
+- [Features](#features)
+- [To run the App in development mode](#to-run-the-app-in-development-mode)
+- [Reference](#reference)
 
-In the project directory, you can run:
+### Introduction
 
-### `npm start`
+The aim of this project was to build a Single Page React PWA (Progressive Web Application), that loads data from an external API and enables the viewing of the weather of a searched city.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Screenshots to represent the project
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### Online mode:
 
-### `npm test`
+![screenshot of the project](./public/img/weatherImg_1.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Offline mode:
 
-### `npm run build`
+![screenshot of the project](./public/img/weatherImg_2.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Tasks in the project
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Create a single page application with React by using `npx create-react-app`
+- Perform an HTTP GET request in Axios for calling API - [https://openweathermap.org/api](https://openweathermap.org/api)
+- Use service worker and JSON Manifest to convert the Website to Progressive Web App
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Link to the App
 
-### `npm run eject`
+A link to the live, hosted version of the app: [https://seresbeata.github.io/weather-pwa/](https://seresbeata.github.io/weather-pwa/)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Install the PWA
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Install on desktop
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Open Google Chrome Browser
+2. Navigate to [https://seresbeata.github.io/weather-pwa/](https://seresbeata.github.io/weather-pwa/)
+3. At the top right of the address bar, click Install .
+4. Follow the onscreen instructions to install the PWA.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![screenshot of the project](./public/img/weatherImg_3.png)
+![screenshot of the project](./public/img/weatherImg_4.png)
 
-## Learn More
+#### Install on mobile
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. On Android device, open Chrome
+2. Navigate to [https://seresbeata.github.io/weather-pwa/](https://seresbeata.github.io/weather-pwa/)
+3. Tap Install
+4. Follow the on-screen instructions.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![screenshot of the project](./public/img/weatherImg_5.jpg)
+![screenshot of the project](./public/img/weatherImg_6.jpg)
 
-### Code Splitting
+### Features
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Allows users to input a city name
+- Returns information about the weather of the given city to the user:
+  - name of the city,
+  - country code,
+  - temperature,
+  - image that symbolizes the characteristic of the weather
+  - description of the weather
+- Display error message in case of invalid city name
+- Displays warning message in case of offline mode
 
-### Analyzing the Bundle Size
+### To run the App in development mode
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+To run the app in the development mode, use the following terminal command in the project directory: `npm start`  
+Open [http://localhost:3000](http://localhost:3000) to view it in browser.
 
-### Making a Progressive Web App
+### Reference
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Product: OpenWeatherMap
+- Description: OpenWeatherMap is an online service, owned by OpenWeather Ltd, that provides global weather data via API, including current weather data, forecasts, nowcasts and historical weather data.
+- Date: 03/05/2023
+- Link: [https://openweathermap.org/api](https://openweathermap.org/api)
